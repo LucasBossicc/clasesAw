@@ -1,0 +1,25 @@
+### --
+
+# GET - IES
+GET https://ies21.edu.ar/
+
+
+### -----
+
+#GET - REST API
+GET https://api.escuelajs.co/api/v1/users
+
+### ----
+
+#get localhosti:3000
+GET http://localhost:3000/suma
+
+### --
+
+#get localhosti:3000
+POST http://localhost:3000/proceso-formulario
+
+### --
+
+#get localhosti:3000
+POST http://localhost:3000/guardar-datos
