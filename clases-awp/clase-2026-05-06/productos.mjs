@@ -1,5 +1,4 @@
 const productos = [
-    [
   {
     "nombre": "nombre 1",
     "precio": 68,
@@ -30,7 +29,6 @@ const productos = [
     "imagen": "imagen 5",
     "id": "5"
   }
-]
 ]
 
 export default productos

@@ -1,27 +1,30 @@
 import express from 'express'
-import { obetenerProductos,obetenerProductosPorId } from './funciones.mjs'
+import { obtenerProductos, obtenerProductosPorId, eliminarProducto, añadirProductos } from './funciones.mjs'
 
 
 const PUERTO = 3000
 
+
 const app = express()
+app.use(express.json())
 
-//CONFIGURACION DE UNA API 
+//configuracion de una API REST
 
-//GET  /api/v1/productos
-app.get('/api/v1/productos', obetenerProductos)
+//GET /api/v1/productos
+app.get('/api/v1/productos', obtenerProductos)
 
 //GET /api/v1/productos/:id
+app.get('/api/v1/productos/:id', obtenerProductosPorId)
 
-app.get('/api/v1/productos/:id', obetenerProductosPorId)
+//POST /api/v1/productos ----> damos de alta registro 
+app.post('/api/v1/productos', añadirProductos)
+
+//PUT /api/v1/productos/:id ----> modificar registro
 
 
-//POST /api/v1/productos/---> damos de alta un registro
+//DELETE /api/v1/productos/:id ----> eliminar registro 
+app.delete('/api/v1/productos:id', eliminarProducto)
 
-//PUT /api/v1/productos/:id  -----> modificar un registro
 
-//DELETE  /api/v1/productos/:id  ---->eliminar un registro
-app.delete('./api/v1/')
 
 app.listen(PUERTO)
-
