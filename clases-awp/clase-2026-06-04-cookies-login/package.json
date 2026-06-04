@@ -1,5 +1,5 @@
 {
-  "name": "clase-2026-06-03-multer",
+  "name": "clase-2026-06-04-cookies-login",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -17,13 +17,11 @@
     }
   },
   "type": "module",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "express": "^5.2.1"
+  },
   "devDependencies": {
     "nodemon": "^3.1.14"
-  },
-  "dependencies": {
-    "express": "^5.2.1",
-    "mime-types": "^3.0.2",
-    "multer": "^2.1.1",
-    "nanoid": "^5.1.11"
   }
 }
